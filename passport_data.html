@@ -1,0 +1,254 @@
+<html lang="pl-PL"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="csrf-token" content="p92ocRSDYoM7z5XDglWAhuatC56ag8gb5JSKvZw7">
+    <meta name="server-time" content="Wed, 04 Dec 2024 11:54:46 GMT">
+    <meta name="language-code" content="pl">
+    <title>Wybierz kolejkę - QNSK REJESTRACJA</title>
+    <link rel="stylesheet" type="text/css" href="https://bez-kolejki.um.wroc.pl/css/app.css">
+    <style>
+    .theme--light.v-btn:not(.v-btn--router):not(.next-button):not(.v-btn--disabled) {
+        color: #333333     !important;
+        background-color: #ffffff     !important;
+    }
+
+    .theme--light.v-btn:not(:focus):not(.next-button):not(.v-btn--disabled) {
+         border-color: #333333     !important;
+     }
+
+    .v-date-picker-table.v-date-picker-table .theme--light.v-btn {
+        color: #006BB7     !important;
+        background-color: #FFFFFF     !important;
+    }
+
+    .v-date-picker-table.v-date-picker-table .theme--light.v-btn.v-btn--active {
+        color: #000000     !important;
+        background-color: #FFD400     !important;
+    }
+
+    .v-date-picker-table.v-date-picker-table .theme--light.v-btn.v-btn--active:not(:focus) {
+        border-color: #767676     !important;
+    }
+
+    .v-date-picker-table.v-date-picker-table .theme--light.v-btn.v-btn--disabled {
+        color: rgba(0, 0, 0, .26) !important;
+    }
+
+    .v-date-picker-table.v-date-picker-table .v-btn.v-btn--outline {
+        border: 1px solid !important;
+    }
+
+    .theme--light .primary:not(.v-btn--router), .theme--light .accent:not(.v-btn--router) {
+        color: #000000     !important;
+        border-color: #767676     !important;
+        background-color: #FFD400     !important;
+    }
+
+    .theme--light .queue-button.queue-button.primary:not(.v-btn--router) {
+        color: #000000     !important;
+        background-color: #FFD400     !important;
+    }
+    .theme--light .queue-button.queue-button.primary:not(.v-btn--router):not(:focus) {
+        border-color: #767676     !important;
+    }
+    .theme--light .v-btn.info.info:not(.v-btn--router) {
+        color: #000000     !important;
+        background-color: #FFD400     !important;
+    }
+    .theme--light .v-btn.info.info:not(.v-btn--router):not(:focus) {
+        border-color: #767676     !important;
+    }
+
+    .theme--light .primary--text:not(.v-btn--router):not(.v-icon):not(.next-button) {
+        color: #000000     !important;
+        background-color: #FFD400     !important;
+    }
+
+    .theme--light .primary--text:not(.v-btn--router):not(.v-icon):not(:focus):not(.next-button) {
+        border-color: #767676     !important;
+    }
+
+    .theme--light.v-bottom-nav .v-btn:not(.v-btn--active) {
+        color: #595959     !important;
+    }
+
+    body {
+            background-color: #FFFFFF     !important;
+        
+        color: #333333 !important;
+        font-size: 1rem !important;
+        font-family: "Roboto" !important;
+    }
+
+    .theme--light h2 {
+        color: #707070 !important;
+    }
+    h2 {
+        font-size: 1.15rem !important;
+        font-family: "Roboto" !important;
+    }
+
+    .theme--light.application, .theme--light.v-card {
+        background-color: #ffffff     !important;
+        color: #333333     !important;
+    }
+
+    .theme--light.v-stepper {
+        background-color: #ffffff     !important;
+    }
+
+    .theme--light.v-bottom-nav {
+        background-color: #ffffff     !important;
+    }
+
+    .wrap-btn {
+        font-size: 1rem !important;
+        font-family: "Roboto" !important;
+    }
+
+    #menu .v-btn__content span {
+        font-size: 0.6rem !important;
+        font-family: "Roboto" !important;
+    }
+
+    #menu .v-btn__content i {
+        font-size: 24px !important;
+    }
+
+    .v-stepper__step__step {
+        font-size: 0.6rem !important;
+        font-family: "Roboto" !important;
+    }
+
+    .queues-stats td {
+        font-size: 0.65rem !important;
+        font-family: "Roboto" !important;
+    }
+
+    .queue-button.queue-button {
+        margin: 6px 0px 20px 0px;
+    }
+
+    .own-footer-image {
+                width: 600px;
+        height: 85px;
+    }
+
+    .own-footer-text {
+        font-family: "Roboto" !important;
+        color:      !important;
+        font-size: 0.6rem !important;
+        padding:      !important;
+        text-align:      !important;
+
+        }
+    .own-header-image {
+                background-image: url('https://bez-kolejki.um.wroc.pl/images/515017.png') !important;
+                width: 100px;
+        height: 100px;
+    }
+
+    .own-header-text {
+        font-family: "Roboto" !important;
+        color: #707070     !important;
+        font-size: 1rem !important;
+        padding:      !important;
+        text-align: center     !important;
+
+        }
+    .theme--light .reservation-info {
+        color: #8A8A8A !important;
+        background-color:  !important;
+    }
+
+    .reservation-info {
+        font-size: 0.75rem !important;
+    }
+
+    .v-input--is-focused .theme--light.v-label.v-label--active,
+    .theme--light.v-input.v-input--is-label-active input,
+    .theme--light.v-text-field > .v-input__control > .v-input__slot:after,
+    .theme--light.v-text-field:not(.v-input--has-state) > .v-input__control > .v-input__slot:hover .v-label {
+        color: #575757 !important;
+    }
+    .theme--light .v-form.v-form .primary--text:not(.v-icon), .theme--light .verify-input .primary--text {
+        color: #575757 !important;
+        background-color: #FFFFFF !important;
+
+    }
+    .theme--light .captcha-div > button {
+        background-color: ;
+    }
+    .theme--light .captcha-div > button > i {
+        color: ;
+    }
+    .theme--light .v-picker__body {
+        background-color: ;
+    }
+    .theme--light .v-picker__title.primary {
+        color: #FFFFFF !important;
+        background-color: #006BB7 !important;
+    }
+    .v-picker__title.primary .v-date-picker-title__date{
+         font-size: 1.7rem !important;
+     }
+    .theme--light.v-date-picker-table th {
+        color: #707070;
+        background-color: #FFFFFF;
+    }
+    .theme--light.v-btn.next-button {
+        color: #FFFFFF !important;
+        background-color: #006BB7 !important;
+    }
+    .v-btn.next-button  {
+        font-size: 0.7rem !important;
+    }
+    .theme--light.v-btn.v-btn--disabled.next-button {
+        color: #FFFFFF !important;
+        background-color: #006BB7 !important;
+    }
+    .theme--light.v-stepper .v-stepper__step--complete .v-stepper__step__step {
+        background-color: #707070 !important;
+        border-color: #707070 !important;
+    }
+    .theme--light.v-stepper .v-stepper__step--complete .v-stepper__step__step .v-icon {
+        color: #FFFFFF !important;
+    }
+    .theme--light.v-stepper .v-stepper__step--active .v-stepper__step__step {
+        color: #FFFFFF !important;
+        background-color: #006BB7 !important;
+        border-color:  !important;
+    }
+    .theme--light.v-stepper .v-stepper__step--inactive .v-stepper__step__step {
+        color: #FFFFFF !important;
+        background-color: #006BB7 !important;
+        border-color: #767676 !important;
+    }
+    .v-date-picker-header__value button {
+        font-size: 1rem !important;
+    }
+    .theme--light.v-date-picker-header .v-btn--icon {
+        color:  !important;
+        background-color:  !important;
+    }
+    .theme--light.v-bottom-nav .v-btn.v-btn--flat:not(.v-btn--active){
+        color: #FFFFFF !important;
+        background-color: #006BB7 !important;
+    }
+    .theme--light.v-bottom-nav#menu .v-btn.v-btn--flat.v-btn--active.primary--text{
+        color: #FFFFFF !important;
+        background-color: #006BB7 !important;
+    }
+</style>
+</head>
+<body>
+<div id="app"><div data-app="true" class="v-application v-application--is-ltr theme--light" id="app"><div class="v-application--wrap"><div class="loader" style="display: none;"><div class="bar"></div></div> <div class="v-snack v-snack--has-background v-snack--multi-line v-snack--top"><div class="v-snack__wrapper v-sheet theme--dark" style="display: none;"><div role="status" aria-live="polite" class="v-snack__content"><div class="d-flex justify-space-between"><div class="align-self-center"><span tabindex="0"></span></div> <div><button type="button" class="v-btn v-btn--icon v-btn--round v-btn--text theme--dark v-size--default pink--text"><span class="v-btn__content"><i aria-hidden="true" class="v-icon notranslate material-icons theme--dark">close</i></span></button></div></div></div><div class="v-snack__action "></div></div></div> <div class="container pa-0 fill-height container--fluid"><div class="d-flex fill-height flex-column" style="width: 100%;"><div class="flex shrink"><header><div class="container own-header pa-0"><div class="d-flex"><div class="own-header-image flex-shrink-1"><span role="img" aria-label="logo w nagłówku"></span></div> <div class="own-header-text flex-grow-1"><div style="position: relative; height: 100%;"><h1 style="font-size: 1.7rem; font-weight: 400;">Centrum Obsługi Mieszkańca</h1> <ul style="padding: 0px; list-style-type: none;"><li><a href="deklaracja?lang=pl#/" style="font-weight: 300; font-size: 0.95rem;">Deklaracja dostępności</a> <br></li> <li><a href="instrukcja?lang=pl#/" style="font-weight: 300; font-size: 0.95rem;">Instrukcja obsługi</a></li></ul> <div style="width: calc(100% + 100px); height: 2px; position: absolute; bottom: -60px; left: -100px; background: linear-gradient(90deg, rgb(0, 107, 183) 0%, rgb(0, 107, 183) 33%, rgb(229, 0, 25) 33%, rgb(229, 0, 25) 66%, rgb(255, 212, 0) 66%, rgb(255, 212, 0) 100%);"></div></div></div></div></div></header></div> <div class="flex grow"><main><div class="container flags d-flex justify-space-around"><a href="?lang=pl"><img src="/images/flags/pl.svg" alt="Polski"></a><a href="?lang=en"><img src="/images/flags/en.svg" alt="English"></a><a href="?lang=ua"><img src="/images/flags/ua.svg" alt="український"></a></div> <div class="d-flex fill-height"><br> <div class="flex xs12"><div class="v-stepper v-sheet theme--light" style="box-shadow: none;"><div class="v-stepper__header"><div class="v-stepper__step v-stepper__step--active"><span class="v-stepper__step__step primary">1</span><div class="v-stepper__label"></div></div><div class="v-stepper__step v-stepper__step--inactive"><span class="v-stepper__step__step">2</span><div class="v-stepper__label"></div></div><div class="v-stepper__step v-stepper__step--inactive"><span class="v-stepper__step__step">3</span><div class="v-stepper__label"></div></div><div class="v-stepper__step v-stepper__step--inactive"><span class="v-stepper__step__step">4</span><div class="v-stepper__label"></div></div></div> <div class="v-stepper__items"><div class="v-stepper__content" style="transform-origin: center top 0px;"><div class="v-stepper__wrapper"><div><div tabindex="0" class="reservation-info"><p><span></span><!----><span>COM VI przy ul. Legnickiej 58 (Magnolia Park)</span></p> <!----></div> <h2 tabindex="0" style="text-align: center;">Wybierz kolejkę</h2> <button type="button" class="next-button button-with-left-icon v-btn v-btn--block v-btn--outlined theme--light v-size--default primary--text"><span class="v-btn__content"><div class="d-flex justify-space-between fill-height align-center"><div class="flex-shrink-1"><i aria-hidden="true" class="v-icon notranslate material-icons theme--light" style="font-size: 36px;">chevron_left</i></div> <div class="flex-grow-1"><div>WRÓĆ</div></div></div></span></button> <button type="button" class="queue-button wrap-btn button-with-right-icon v-btn v-btn--block v-btn--outlined theme--light v-size--large"><span class="v-btn__content"><div class="d-flex justify-space-between fill-height align-center"><div class="flex-grow-1"><div>UA: PESEL<br><small>Najbliższy wolny termin 04.12.2024 13:00</small></div></div> <div class="flex-shrink-1"><i aria-hidden="true" class="v-icon notranslate material-icons theme--light" style="font-size: 36px;">chevron_right</i></div></div></span></button><button type="button" class="queue-button wrap-btn button-with-right-icon v-btn v-btn--block v-btn--outlined theme--light v-size--large"><span class="v-btn__content"><div class="d-flex justify-space-between fill-height align-center"><div class="flex-grow-1"><div>UB: Dowód osobisty – odbiór gotowego dokumentu<br><small>Najbliższy wolny termin 04.12.2024 14:30</small></div></div> <div class="flex-shrink-1"><i aria-hidden="true" class="v-icon notranslate material-icons theme--light" style="font-size: 36px;">chevron_right</i></div></div></span></button><button type="button" class="queue-button wrap-btn button-with-right-icon v-btn v-btn--block v-btn--outlined theme--light v-size--large"><span class="v-btn__content"><div class="d-flex justify-space-between fill-height align-center"><div class="flex-grow-1"><div>UC: Dowód osobisty – złożenie wniosku<br><small>Najbliższy wolny termin 09.12.2024 10:00</small></div></div> <div class="flex-shrink-1"><i aria-hidden="true" class="v-icon notranslate material-icons theme--light" style="font-size: 36px;">chevron_right</i></div></div></span></button><button type="button" class="queue-button wrap-btn button-with-right-icon v-btn v-btn--block v-btn--outlined theme--light v-size--large"><span class="v-btn__content"><div class="d-flex justify-space-between fill-height align-center"><div class="flex-grow-1"><div>UM: Sprawy dotyczące meldunku<br><small>Najbliższy wolny termin 04.12.2024 13:30</small></div></div> <div class="flex-shrink-1"><i aria-hidden="true" class="v-icon notranslate material-icons theme--light" style="font-size: 36px;">chevron_right</i></div></div></span></button><button type="button" class="queue-button wrap-btn button-with-right-icon v-btn v-btn--block v-btn--outlined theme--light v-size--large"><span class="v-btn__content"><div class="d-flex justify-space-between fill-height align-center"><div class="flex-grow-1"><div>UP: Prawo Jazdy PKK i inne - OBYWATELE POLSCY<br><small>Najbliższy wolny termin 05.12.2024 10:00</small></div></div> <div class="flex-shrink-1"><i aria-hidden="true" class="v-icon notranslate material-icons theme--light" style="font-size: 36px;">chevron_right</i></div></div></span></button><button type="button" class="queue-button wrap-btn button-with-right-icon v-btn v-btn--block v-btn--outlined theme--light v-size--large"><span class="v-btn__content"><div class="d-flex justify-space-between fill-height align-center"><div class="flex-grow-1"><div>UK: Prawo Jazdy PKK i inne - OBCOKRAJOWCY<br><small>Najbliższy wolny termin 04.12.2024 13:00</small></div></div> <div class="flex-shrink-1"><i aria-hidden="true" class="v-icon notranslate material-icons theme--light" style="font-size: 36px;">chevron_right</i></div></div></span></button><button type="button" class="queue-button wrap-btn button-with-right-icon v-btn v-btn--block v-btn--outlined theme--light v-size--large"><span class="v-btn__content"><div class="d-flex justify-space-between fill-height align-center"><div class="flex-grow-1"><div>UR: Rejestracja pojazdu<br><small>Najbliższy wolny termin 16.12.2024 10:00</small></div></div> <div class="flex-shrink-1"><i aria-hidden="true" class="v-icon notranslate material-icons theme--light" style="font-size: 36px;">chevron_right</i></div></div></span></button><button type="button" class="queue-button wrap-btn button-with-right-icon v-btn v-btn--block v-btn--outlined theme--light v-size--large"><span class="v-btn__content"><div class="d-flex justify-space-between fill-height align-center"><div class="flex-grow-1"><div>UW: Odbiór dowodów rejestracyjnych oraz wpis adnotacji urzędowych<br><small>Najbliższy wolny termin 04.12.2024 13:00</small></div></div> <div class="flex-shrink-1"><i aria-hidden="true" class="v-icon notranslate material-icons theme--light" style="font-size: 36px;">chevron_right</i></div></div></span></button><button type="button" class="queue-button wrap-btn button-with-right-icon v-btn v-btn--block v-btn--outlined theme--light v-size--large"><span class="v-btn__content"><div class="d-flex justify-space-between fill-height align-center"><div class="flex-grow-1"><div>UZ: PASZPORT - złożenie wniosku</div></div> <div class="flex-shrink-1"><i aria-hidden="true" class="v-icon notranslate material-icons theme--light" style="font-size: 36px;">chevron_right</i></div></div></span></button><button type="button" class="queue-button wrap-btn button-with-right-icon v-btn v-btn--block v-btn--outlined theme--light v-size--large"><span class="v-btn__content"><div class="d-flex justify-space-between fill-height align-center"><div class="flex-grow-1"><div>UG: Odbiór PASZPORTU<br><small>Najbliższy wolny termin 04.12.2024 13:30</small></div></div> <div class="flex-shrink-1"><i aria-hidden="true" class="v-icon notranslate material-icons theme--light" style="font-size: 36px;">chevron_right</i></div></div></span></button> <button type="button" class="next-button button-with-right-icon v-btn v-btn--block v-btn--disabled v-btn--outlined theme--light v-size--default" disabled="disabled"><span class="v-btn__content"><div class="d-flex justify-space-between fill-height align-center"><div class="flex-grow-1"><div>DALEJ</div></div> <div class="flex-shrink-1"><i aria-hidden="true" class="v-icon notranslate material-icons theme--light" style="font-size: 36px;">chevron_right</i></div></div></span></button></div></div></div><div class="v-stepper__content" style="display: none;"><div class="v-stepper__wrapper"><div><div tabindex="0" class="reservation-info"><p><span></span><!----><span>COM VI przy ul. Legnickiej 58 (Magnolia Park)</span></p> <!----></div> <button type="button" class="next-button button-with-left-icon v-btn v-btn--block v-btn--outlined theme--light v-size--default primary--text"><span class="v-btn__content"><div class="d-flex justify-space-between fill-height align-center"><div class="flex-shrink-1"><i aria-hidden="true" class="v-icon notranslate material-icons theme--light" style="font-size: 36px;">chevron_left</i></div> <div class="flex-grow-1"><div>WRÓĆ</div></div></div></span></button> <h2 tabindex="0" style="text-align: center;">Wybierz datę</h2> <div class="align-center justify-center fill-height"><div class="v-picker v-card v-picker--date v-picker--full-width theme--light"><div class="v-picker__title primary"><div class="v-date-picker-title"><div class="v-picker__title__btn v-date-picker-title__year">2024</div><div class="v-picker__title__btn v-date-picker-title__date v-picker__title__btn--active"><div>&nbsp;</div></div></div></div><div class="v-picker__body theme--light"><div><div class="v-date-picker-header theme--light"><button type="button" disabled="disabled" class="v-btn v-btn--disabled v-btn--icon v-btn--round theme--light v-size--default" aria-label="Poprzedni miesiąc"><span class="v-btn__content"><i aria-hidden="true" class="v-icon notranslate material-icons theme--light">chevron_left</i></span></button><div class="v-date-picker-header__value"><div class="accent--text"><button type="button">grudzień 2024</button></div></div><button type="button" disabled="disabled" class="v-btn v-btn--disabled v-btn--icon v-btn--round theme--light v-size--default" aria-label="Następny miesiąc"><span class="v-btn__content"><i aria-hidden="true" class="v-icon notranslate material-icons theme--light">chevron_right</i></span></button></div><div class="v-date-picker-table v-date-picker-table--date theme--light"><table><thead><tr><th>P</th><th>W</th><th>Ś</th><th>C</th><th>P</th><th>S</th><th>N</th></tr></thead><tbody><tr><td></td><td></td><td></td><td></td><td></td><td></td><td><button type="button" class="v-btn v-btn--flat v-btn--text v-btn--rounded v-btn--disabled theme--light" disabled="" aria-label="niedziela, 1 grudnia"><div class="v-btn__content">1</div></button></td></tr><tr><td><button type="button" class="v-btn v-btn--flat v-btn--text v-btn--rounded v-btn--disabled theme--light" disabled="" aria-label="poniedziałek, 2 grudnia"><div class="v-btn__content">2</div></button></td><td><button type="button" class="v-btn v-btn--flat v-btn--text v-btn--rounded v-btn--disabled theme--light" disabled="" aria-label="wtorek, 3 grudnia"><div class="v-btn__content">3</div></button></td><td><button type="button" class="v-btn v-date-picker-table__current v-btn--flat v-btn--rounded v-btn--disabled v-btn--outlined theme--light accent--text" disabled="" aria-label="środa, 4 grudnia"><div class="v-btn__content">4</div></button></td><td><button type="button" class="v-btn v-btn--flat v-btn--text v-btn--rounded v-btn--disabled theme--light" disabled="" aria-label="czwartek, 5 grudnia"><div class="v-btn__content">5</div></button></td><td><button type="button" class="v-btn v-btn--flat v-btn--text v-btn--rounded v-btn--disabled theme--light" disabled="" aria-label="piątek, 6 grudnia"><div class="v-btn__content">6</div></button></td><td><button type="button" class="v-btn v-btn--flat v-btn--text v-btn--rounded v-btn--disabled theme--light" disabled="" aria-label="sobota, 7 grudnia"><div class="v-btn__content">7</div></button></td><td><button type="button" class="v-btn v-btn--flat v-btn--text v-btn--rounded v-btn--disabled theme--light" disabled="" aria-label="niedziela, 8 grudnia"><div class="v-btn__content">8</div></button></td></tr><tr><td><button type="button" class="v-btn v-btn--flat v-btn--text v-btn--rounded v-btn--disabled theme--light" disabled="" aria-label="poniedziałek, 9 grudnia"><div class="v-btn__content">9</div></button></td><td><button type="button" class="v-btn v-btn--flat v-btn--text v-btn--rounded v-btn--disabled theme--light" disabled="" aria-label="wtorek, 10 grudnia"><div class="v-btn__content">10</div></button></td><td><button type="button" class="v-btn v-btn--flat v-btn--text v-btn--rounded v-btn--disabled theme--light" disabled="" aria-label="środa, 11 grudnia"><div class="v-btn__content">11</div></button></td><td><button type="button" class="v-btn v-btn--flat v-btn--text v-btn--rounded v-btn--disabled theme--light" disabled="" aria-label="czwartek, 12 grudnia"><div class="v-btn__content">12</div></button></td><td><button type="button" class="v-btn v-btn--flat v-btn--text v-btn--rounded v-btn--disabled theme--light" disabled="" aria-label="piątek, 13 grudnia"><div class="v-btn__content">13</div></button></td><td><button type="button" class="v-btn v-btn--flat v-btn--text v-btn--rounded v-btn--disabled theme--light" disabled="" aria-label="sobota, 14 grudnia"><div class="v-btn__content">14</div></button></td><td><button type="button" class="v-btn v-btn--flat v-btn--text v-btn--rounded v-btn--disabled theme--light" disabled="" aria-label="niedziela, 15 grudnia"><div class="v-btn__content">15</div></button></td></tr><tr><td><button type="button" class="v-btn v-btn--flat v-btn--text v-btn--rounded v-btn--disabled theme--light" disabled="" aria-label="poniedziałek, 16 grudnia"><div class="v-btn__content">16</div></button></td><td><button type="button" class="v-btn v-btn--flat v-btn--text v-btn--rounded v-btn--disabled theme--light" disabled="" aria-label="wtorek, 17 grudnia"><div class="v-btn__content">17</div></button></td><td><button type="button" class="v-btn v-btn--flat v-btn--text v-btn--rounded v-btn--disabled theme--light" disabled="" aria-label="środa, 18 grudnia"><div class="v-btn__content">18</div></button></td><td><button type="button" class="v-btn v-btn--flat v-btn--text v-btn--rounded v-btn--disabled theme--light" disabled="" aria-label="czwartek, 19 grudnia"><div class="v-btn__content">19</div></button></td><td><button type="button" class="v-btn v-btn--flat v-btn--text v-btn--rounded v-btn--disabled theme--light" disabled="" aria-label="piątek, 20 grudnia"><div class="v-btn__content">20</div></button></td><td><button type="button" class="v-btn v-btn--flat v-btn--text v-btn--rounded v-btn--disabled theme--light" disabled="" aria-label="sobota, 21 grudnia"><div class="v-btn__content">21</div></button></td><td><button type="button" class="v-btn v-btn--flat v-btn--text v-btn--rounded v-btn--disabled theme--light" disabled="" aria-label="niedziela, 22 grudnia"><div class="v-btn__content">22</div></button></td></tr><tr><td><button type="button" class="v-btn v-btn--flat v-btn--text v-btn--rounded v-btn--disabled theme--light" disabled="" aria-label="poniedziałek, 23 grudnia"><div class="v-btn__content">23</div></button></td><td><button type="button" class="v-btn v-btn--flat v-btn--text v-btn--rounded v-btn--disabled theme--light" disabled="" aria-label="wtorek, 24 grudnia"><div class="v-btn__content">24</div></button></td><td><button type="button" class="v-btn v-btn--flat v-btn--text v-btn--rounded v-btn--disabled theme--light" disabled="" aria-label="środa, 25 grudnia"><div class="v-btn__content">25</div></button></td><td><button type="button" class="v-btn v-btn--flat v-btn--text v-btn--rounded v-btn--disabled theme--light" disabled="" aria-label="czwartek, 26 grudnia"><div class="v-btn__content">26</div></button></td><td><button type="button" class="v-btn v-btn--flat v-btn--text v-btn--rounded v-btn--disabled theme--light" disabled="" aria-label="piątek, 27 grudnia"><div class="v-btn__content">27</div></button></td><td><button type="button" class="v-btn v-btn--flat v-btn--text v-btn--rounded v-btn--disabled theme--light" disabled="" aria-label="sobota, 28 grudnia"><div class="v-btn__content">28</div></button></td><td><button type="button" class="v-btn v-btn--flat v-btn--text v-btn--rounded v-btn--disabled theme--light" disabled="" aria-label="niedziela, 29 grudnia"><div class="v-btn__content">29</div></button></td></tr><tr><td><button type="button" class="v-btn v-btn--flat v-btn--text v-btn--rounded v-btn--disabled theme--light" disabled="" aria-label="poniedziałek, 30 grudnia"><div class="v-btn__content">30</div></button></td><td><button type="button" class="v-btn v-btn--flat v-btn--text v-btn--rounded v-btn--disabled theme--light" disabled="" aria-label="wtorek, 31 grudnia"><div class="v-btn__content">31</div></button></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table></div></div></div></div></div> <button type="button" disabled="disabled" class="next-button button-with-right-icon v-btn v-btn--block v-btn--disabled v-btn--outlined theme--light v-size--default"><span class="v-btn__content"><div class="d-flex justify-space-between fill-height align-center"><div class="flex-grow-1"><div>DALEJ</div></div> <div class="flex-shrink-1"><i aria-hidden="true" class="v-icon notranslate material-icons theme--light" style="font-size: 36px;">chevron_right</i></div></div></span></button></div></div></div><div class="v-stepper__content" style="display: none;"><div class="v-stepper__wrapper"><div><div tabindex="0" class="reservation-info"><p><span></span><!----><span>COM VI przy ul. Legnickiej 58 (Magnolia Park)</span></p> <!----></div> <button type="button" class="next-button button-with-left-icon v-btn v-btn--block v-btn--outlined theme--light v-size--default primary--text"><span class="v-btn__content"><div class="d-flex justify-space-between fill-height align-center"><div class="flex-shrink-1"><i aria-hidden="true" class="v-icon notranslate material-icons theme--light" style="font-size: 36px;">chevron_left</i></div> <div class="flex-grow-1"><div>WRÓĆ</div></div></div></span></button> <h2 tabindex="0" style="text-align: center;">Wybierz godzinę</h2> <div class="container grid-list-md text-xs-center"><div class="layout row wrap align-center justify-center"></div></div> <button type="button" disabled="disabled" class="next-button button-with-right-icon v-btn v-btn--block v-btn--disabled v-btn--outlined theme--light v-size--default"><span class="v-btn__content"><div class="d-flex justify-space-between fill-height align-center"><div class="flex-grow-1"><div>DALEJ</div></div> <div class="flex-shrink-1"><i aria-hidden="true" class="v-icon notranslate material-icons theme--light" style="font-size: 36px;">chevron_right</i></div></div></span></button></div></div></div><div class="v-stepper__content" style="display: none;"><div class="v-stepper__wrapper"><div><div tabindex="0" class="reservation-info"><p><span></span><!----><span>COM VI przy ul. Legnickiej 58 (Magnolia Park)</span></p> <!----></div> <button type="button" class="next-button button-with-left-icon v-btn v-btn--block v-btn--outlined theme--light v-size--default primary--text"><span class="v-btn__content"><div class="d-flex justify-space-between fill-height align-center"><div class="flex-shrink-1"><i aria-hidden="true" class="v-icon notranslate material-icons theme--light" style="font-size: 36px;">chevron_left</i></div> <div class="flex-grow-1"><div>WRÓĆ</div></div></div></span></button> <h2 tabindex="0" style="text-align: center;">Uzupełnij formularz</h2> <p tabindex="0" style="font-size: 0.7rem;">* - wymagane pola</p> <form novalidate="novalidate" class="v-form pa-3"><fieldset style="border: none;"><legend class="d-sr-only">Formularz</legend> </fieldset> <fieldset style="border: none;"><div><div class="v-input v-input--is-label-active v-input--is-dirty theme--light v-input--selection-controls v-input--checkbox primary--text"><div class="v-input__control"><div class="v-input__slot"><div class="v-input--selection-controls__input"><i aria-hidden="true" class="v-icon notranslate material-icons theme--light primary--text">check_box</i><input aria-checked="true" id="input-143" role="checkbox" type="checkbox" required="required" aria-label="Akceptujęregulamin" value=""><div class="v-input--selection-controls__ripple primary--text"></div></div><label for="input-143" class="v-label theme--light" style="left: 0px; right: auto; position: relative;"><span>Akceptuję
+                    <span class="v-tooltip v-tooltip--top"><!----></span><a href="/?lang=pl#/rules" target="_blank" aria-haspopup="true" aria-expanded="false">regulamin</a> *
+                </span></label></div><div class="v-messages theme--light"><div class="v-messages__wrapper"><div class="v-messages__message">Pole jest wymagane</div></div></div></div></div></div> <div><div class="v-input theme--light v-input--selection-controls v-input--checkbox"><div class="v-input__control"><div class="v-input__slot"><div class="v-input--selection-controls__input"><i aria-hidden="true" class="v-icon notranslate material-icons theme--light">check_box_outline_blank</i><input aria-checked="false" id="input-149" role="checkbox" type="checkbox" required="required" aria-label="Zapoznałem się zklauzulą informacyjną o przetwarzaniu danych osobowych" value=""><div class="v-input--selection-controls__ripple"></div></div><label for="input-149" class="v-label theme--light" style="left: 0px; right: auto; position: relative;"><span>Zapoznałem się z
+                    <span class="v-tooltip v-tooltip--top"><!----></span><a href="/?lang=pl#/clause" target="_blank" aria-haspopup="true" aria-expanded="false">klauzulą informacyjną o przetwarzaniu danych osobowych</a> *
+                </span></label></div><div class="v-messages theme--light"><div class="v-messages__wrapper"><div class="v-messages__message">Pole jest wymagane</div></div></div></div></div></div> <div><div class="v-input theme--light v-input--selection-controls v-input--checkbox"><div class="v-input__control"><div class="v-input__slot"><div class="v-input--selection-controls__input"><i aria-hidden="true" class="v-icon notranslate material-icons theme--light">check_box_outline_blank</i><input aria-checked="false" id="input-155" role="checkbox" type="checkbox" required="required" aria-label="Wyrażam zgodę, aby moje dane osobowe w zakresie obejmującym: fragment PESEL, adres e-mail, datę utworzenia karty klienta, godzinę, czas, numer podgrupy przypisanej do umówionej wizyty wraz z identyfikatorem z karty klienta były przetwarzane przez Prezydenta Wrocławia w celu realizacji rezerwacji terminu wizyty i jej obsługi. Zgoda może być w każdym momencie wycofana poprzez kontakt z Administratorem danych lub Inspektorem Ochrony Danych Urzędu Miejskiego Wrocławia (dane kontaktowe dostępne w „Klauzuli informacyjnej RODO”)." value=""><div class="v-input--selection-controls__ripple"></div></div><label for="input-155" class="v-label theme--light" style="left: 0px; right: auto; position: relative;"><span>Wyrażam zgodę, aby moje dane osobowe w zakresie obejmującym: fragment PESEL, adres e-mail, datę utworzenia karty klienta, godzinę, czas, numer podgrupy przypisanej do umówionej wizyty wraz z identyfikatorem z karty klienta były przetwarzane przez Prezydenta Wrocławia w celu realizacji rezerwacji terminu wizyty i jej obsługi. Zgoda może być w każdym momencie wycofana poprzez kontakt z Administratorem danych lub Inspektorem Ochrony Danych Urzędu Miejskiego Wrocławia (dane kontaktowe dostępne w „Klauzuli informacyjnej RODO”).*</span></label></div><div class="v-messages theme--light"><div class="v-messages__wrapper"><div class="v-messages__message">Pole jest wymagane</div></div></div></div></div></div></fieldset> <button type="submit" class="next-button v-btn v-btn--block v-btn--outlined theme--light v-size--default primary--text"><span class="v-btn__content">
+            Umów wizytę
+        </span></button></form></div></div></div></div></div></div></div></main></div> <div class="flex shrink"><footer><div class="container own-footer pa-0"><div class="d-flex"><div class="own-footer-image flex-shrink-1"><span role="img" aria-label="logo w stopce"></span></div> <div class="own-footer-text flex-grow-1"></div></div></div></footer></div></div></div></div></div></div>
+<script src="https://bez-kolejki.um.wroc.pl/js/app.js"></script>
+
+</body></html>
